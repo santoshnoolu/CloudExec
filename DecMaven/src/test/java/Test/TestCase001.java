@@ -23,6 +23,7 @@ driver.get("https://www.google.com");
 System.out.println("Navigated to Google.com");
 System.out.println(driver.getTitle());
 System.out.println(driver.getPageSource());
+System.out.println(driver.getCurrentUrl());
 }
 @Test
 public void m2()
@@ -31,6 +32,7 @@ public void m2()
 	System.out.println("Navigated to Amazon.in");
 	System.out.println(driver.getTitle());
 	System.out.println(driver.getPageSource());
+	System.out.println(driver.getCurrentUrl());
 }
 @AfterMethod
 public void teardown()
